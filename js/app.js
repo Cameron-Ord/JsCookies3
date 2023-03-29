@@ -50,5 +50,19 @@ function cookie_remover(){
 };
 
 
-let cookies_killer = document.querySelector(`#donotclick`)
+let cookies_killer = document.querySelector(`#donotclick`);
 cookies_killer.addEventListener(`click`, cookie_remover);
+
+
+
+function select_color(details){
+
+    Cookies.set(`chosen_color`, details[`target`].getAttribute(`cookie_color`));
+};
+
+let colorbutton = document.querySelectorAll(`.colorbutton`);
+for(let counter = 0; counter < colorbutton.length; counter = counter +1){
+
+colorbutton[counter].addEventListener(`click`, select_color);
+
+}
