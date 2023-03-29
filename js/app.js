@@ -39,8 +39,16 @@ cookies_getter.insertAdjacentHTML(`afterend`, `<h1>please click the button</h1>`
 }else{
 
     cookies_getter.insertAdjacentHTML(`afterend`, `<h1>Good job making a cookie</h1>`);
-}
+};
 
 
+function cookie_remover(){
 
 
+    Cookies.remove(`button_clicked`);
+    
+};
+
+
+let cookies_killer = document.querySelector(`#donotclick`)
+cookies_killer.addEventListener(`click`, cookie_remover);
