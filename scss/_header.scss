@@ -1,0 +1,28 @@
+#page_header{
+
+    display: grid;
+
+    width: 100%;
+
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    
+    place-items: center;
+
+    background-color: #C3DBC5;
+
+    min-height: 10vh;
+
+    >#header_span{
+
+        display: grid;
+
+        width: 100%;
+
+        justify-items: center;
+
+        align-items: center;
+
+        grid-template-columns: 1fr 1fr;
+
+    }
+}
